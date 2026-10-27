@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcePack — Production-Ready GenAI Systems</title>
+  <meta name="description" content="AcePack builds governed, production-ready GenAI systems — RAG, agentic workflows, and measurable optimization. Explore Counter-Malaysia: 1.35M personas from the YTL × NVIDIA Nemotron-Personas-Malaysia dataset." />
+  <meta property="og:title" content="AcePack — Production-Ready GenAI Systems" />
+  <meta property="og:description" content="From notebook to secure, monitored, governed, deployable AI." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236C7CFF'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='18' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark">A</span>
+      <span class="brand-name">AcePack</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#counter">Counter-Malaysia</a>
+      <a href="#services">Services</a>
+      <a href="#proof">Proof</a>
+      <a href="#careers">Careers</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#contact">Book a review</a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-badge">Boutique enterprise AI architecture firm · Malaysia</div>
+      <h1>Production-ready <span class="grad">GenAI systems.</span><br />Not demos.</h1>
+      <p class="hero-sub">
+        AcePack moves teams from “it works in a notebook” to secure, monitored, governed, deployable AI —
+        RAG, agentic workflows, and optimization engineering that maps to business outcomes.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Book an AI Architecture Review</a>
+        <a class="btn btn-ghost" href="#counter">Explore Counter-Malaysia ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>4</strong><span>core service lines</span></div>
+        <div class="stat"><strong>$450K</strong><span>annual savings pattern</span></div>
+        <div class="stat"><strong>1.35M</strong><span>personas visualized</span></div>
+        <div class="stat"><strong>0</strong><span>demos shipped to prod</span></div>
+      </div>
+    </section>
+
+    <!-- COUNTER-MALAYSIA -->
+    <section id="counter" class="counter">
+      <div class="section-head">
+        <span class="eyebrow">Flagship build · Open data</span>
+        <h2>Counter-Malaysia</h2>
+        <p>
+          A live visualization of the <strong>Nemotron-Personas-Malaysia</strong> dataset — 1.35M synthetic personas
+          built by <strong>YTL AI Labs × NVIDIA</strong> from official Malaysian demographic &amp; labour statistics
+          (DOSM, OpenDOSM, MyCensus). See the population at a glance.
+        </p>
+      </div>
+
+      <div class="counter-grid">
+        <div class="counter-total">
+          <span class="counter-label">Synthetic personas indexed</span>
+          <span class="counter-number" id="nationalCounter">0</span>
+          <span class="counter-note">CC-BY-4.0 · generated from 150,000 base records</span>
+        </div>
+        <div class="counter-map-wrap">
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <div class="state-list" id="stateList"></div>
+      <p class="counter-foot">
+        * State figures are proportional estimates for the demo. Swap in the full
+        <a href="https://huggingface.co/datasets" target="_blank" rel="noopener">Nemotron-Personas-Malaysia dataset</a>
+        for exact distributions.
+      </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>From prototype to production</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>AI Architecture Review</h3>
+          <p>The fastest first engagement. A current-state map, risk register, evaluation plan, and a 30/60/90-day roadmap.</p>
+        </article>
+        <article class="card">
+          <h3>RAG &amp; Agentic Builds</h3>
+          <p>Productionize retrieval, tool-using agents (LangGraph), evaluation harnesses, guardrails, and deployment.</p>
+        </article>
+        <article class="card">
+          <h3>Classical ML &amp; Data</h3>
+          <p>Data science, analytics, and optimization — applied where the business value is real, not for its own sake.</p>
+        </article>
+        <article class="card">
+          <h3>Workshops &amp; Talks</h3>
+          <p>Capability-building for teams that want to build real systems, not just use tools.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section id="proof" class="proof">
+      <div class="section-head">
+        <span class="eyebrow">Why it matters</span>
+        <h2>Governance is how you scale safely</h2>
+      </div>
+      <div class="proof-grid">
+        <div class="proof-item"><strong>Evaluation harnesses</strong><p>If you can’t measure it, you can’t deploy it — groundedness, hallucination rate, cost per successful task.</p></div>
+        <div class="proof-item"><strong>Security controls</strong><p>PII, secrets, and prompt-injection risk — with access, audit, and permission boundaries.</p></div>
+        <div class="proof-item"><strong>Cost &amp; latency</strong><p>Deterministic fallbacks, caching, and eval-driven model selection — no token blowups.</p></div>
+        <div class="proof-item"><strong>Business alignment</strong><p>One engagement turned optimization work into ~USD 450,000 in annual operational savings.</p></div>
+      </div>
+    </section>
+
+    <!-- CAREERS -->
+    <section id="careers" class="careers">
+      <div class="section-head">
+        <span class="eyebrow">We’re hiring</span>
+        <h2>Join the build</h2>
+      </div>
+      <div class="careers-grid">
+        <div class="career">
+          <h3>GenAI / Data Intern</h3>
+          <p>RAG pipelines, evaluation scripts, data prep &amp; SQL analytics. Remote / hybrid (Malaysia).</p>
+        </div>
+        <div class="career">
+          <h3>Senior GenAI Engineer / Architect</h3>
+          <p>Production architecture, governance, cost/latency engineering. Ship systems, not slides.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Start with a review.</h2>
+      <p>Tell us your use case. We’ll propose the smallest high-confidence first step.</p>
+      <a class="btn btn-primary" href="mailto:hello@acepack.ai">hello@acepack.ai</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> AcePack. Production-ready GenAI, governed by design.</span>
+    <span class="footer-links">
+      <a href="#top">Top</a>
+      <a href="#services">Services</a>
+      <a href="#careers">Careers</a>
+    </span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
